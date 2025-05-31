@@ -18,8 +18,8 @@ class AuthGate extends StatelessWidget {
               child: CircularProgressIndicator(),
             ),
           );
-        }
-        // check if there is a valid session currently  
+        } 
+        //kiểm tra có session hợp lệ không
         final session = snapshot.hasData ? snapshot.data!.session : null;
         if(session != null){
           return const ProfilePage();
